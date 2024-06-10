@@ -1,12 +1,13 @@
 <script>
+import ProjectsList from './components/ProjectsList.vue';
   export default {
-    
-  }
+    components: { ProjectsList }
+}
 </script>
 
 <template>
   <div>
-    ciao ciao
+    <ProjectsList></ProjectsList>
   </div>
 </template>
 
