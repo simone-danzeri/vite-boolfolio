@@ -3,6 +3,17 @@
         name: 'ProjectCard',
         props: {
             project: Object
+        },
+        data() {
+
+        },
+        methods: {
+            truncateSummary(text) {
+                if(text.length > 75) {
+                    return text.substr(0, 74) + '...';
+                }
+                return text;
+            }
         }
     }
 </script>
@@ -24,7 +35,7 @@
                         <strong>Technologies</strong>: <span v-for="techs in project.technologies" class="fw-light">{{ techs.name }}&nbsp;</span>
                     </div>
                     <p v-if="project.summary" class="card-text my-2">
-                        <strong>Project Summary</strong>: <span class="fw-lighter">{{ project.summary }}</span>
+                        <strong>Project Summary</strong>: <span class="fw-lighter">{{ truncateSummary(project.summary) }}</span>
                     </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
