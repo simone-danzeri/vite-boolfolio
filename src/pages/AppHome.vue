@@ -5,8 +5,8 @@
 </script>
 
 <template>
-    <div>
-        Hi I'm Home
+    <div class="container">
+        <div class="text-center my-5">Hi I'm Home</div>
     </div>
 </template>
 

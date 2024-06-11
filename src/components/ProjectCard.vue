@@ -37,7 +37,7 @@
                     <p v-if="project.summary" class="card-text my-2">
                         <strong>Project Summary</strong>: <span class="fw-lighter">{{ truncateSummary(project.summary) }}</span>
                     </p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary">See More</router-link>
                 </div>
             </div>
         </div>
