@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AppHome from './pages/AppHome.vue';
 import AppAbout from './pages/AppAbout.vue';
 import ProjectsList from './pages/ProjectsList.vue';
+import SingleProject from './pages/SingleProject.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -20,6 +21,11 @@ const router = createRouter({
             name: 'projects',
             component: ProjectsList
         },
+        {
+            path: '/projects/:slug',
+            name: 'single-project',
+            component: SingleProject
+        }
     ]
 });
 export { router };
