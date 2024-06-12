@@ -32,7 +32,7 @@
                         <strong>Project Type</strong>: <span class="fw-light">{{ project.type.name }}</span>
                     </div>
                     <div v-if="project.technologies.length > 0" class="card-text my-2">
-                        <strong>Technologies</strong>: <span v-for="techs in project.technologies" class="fw-light">{{ techs.name }}&nbsp;</span>
+                        <strong>Technologies</strong>: <span v-for="techs in project.technologies" class="fw-light mx-1">{{ techs.name }}&nbsp;</span>
                     </div>
                     <p v-if="project.summary" class="card-text my-2">
                         <strong>Project Summary</strong>: <span class="fw-lighter">{{ truncateSummary(project.summary) }}</span>

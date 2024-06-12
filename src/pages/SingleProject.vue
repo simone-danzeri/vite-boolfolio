@@ -42,7 +42,7 @@ import axios from 'axios';
                 </div>
                 <div class="my-2">
                     <strong>Technologies</strong>: 
-                    <span v-if="project.technologies.length > 0" v-for="techs in project.technologies" class="fw-lighter">{{ techs.name }}&nbsp;</span>
+                    <span v-if="project.technologies.length > 0" v-for="techs in project.technologies" class="badge rounded-pill text-bg-success">{{ techs.name }}&nbsp;</span>
                     <span v-else class="fw-lighter">No technology selected</span>
                 </div>
                 <p class=" my-2">
