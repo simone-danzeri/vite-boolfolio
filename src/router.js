@@ -3,6 +3,7 @@ import AppHome from './pages/AppHome.vue';
 import AppAbout from './pages/AppAbout.vue';
 import ProjectsList from './pages/ProjectsList.vue';
 import SingleProject from './pages/SingleProject.vue';
+import ContactUs from './pages/ContactUs.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -25,7 +26,12 @@ const router = createRouter({
             path: '/projects/:slug',
             name: 'single-project',
             component: SingleProject
-        }
+        },
+        {
+            path: '/contact-us',
+            name: 'contact-us',
+            component: ContactUs
+        },
     ]
 });
 export { router };

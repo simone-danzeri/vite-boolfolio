@@ -23,6 +23,9 @@
                     <li class="nav-item">
                         <router-link class="nav-link active" aria-current="page" :to="{ name: 'projects' }">Projects</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link active" aria-current="page" :to="{ name: 'contact-us' }">Contact Us</router-link>
+                    </li>
                 </ul>
                 </div>
             </div>
